@@ -49,7 +49,7 @@ contract EthToken {
 
     mapping(address => uint256) public balances;
 
-    function mint(deal with _to, uint256 _value) public {
+    function mint(address _to, uint256 _value) public {
         totalSupply += _value;
         balances[_to] += _value;
     }
